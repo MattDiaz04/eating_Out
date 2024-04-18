@@ -34,11 +34,14 @@ require(tigerstats)
 require(knitr)
 #require(haven)
 GSS=read.csv('GSS1996 (1).csv')
+GSS$race = factor(GSS$race,level=c('black', 'white', 'other'))
+GSS$eatout = factor(GSS$eatout, levels=c('yes','no')) 
 ```
+
 
 ## Methods
 
-Both "race" and "eatout" are categorical. Therefore we use the 
+Both "race" and "eatout" are categorical. Therefore we use the Cat ~ Cat helper file. 
 
 ## Descriptive results
 
