@@ -45,6 +45,14 @@ Both "race" and "eatout" are categorical. Therefore we use the Cat ~ Cat helper 
 
 ## Descriptive results
 
+```{r}
+barchartGC(~eatout + race,data=GSS)
+barchartGC(~eatout + race,data=GSS, type="percent")
+```
+
+X axis is eatout (1=yes, 2=no) labels on the columns are (1=black,2=white,3=other)
+White group, they do not eat out.
+
 ## infrential results
 ### Chi-squared test results
 
