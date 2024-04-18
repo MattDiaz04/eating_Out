@@ -75,4 +75,12 @@ There seems to be no relationship in the chi-squared test.
 
 ### fisherXY test results
 
+```{r}
+fisher.test(table)
+fisherXY(GSS$eatout,GSS$race, printAll=T)
+```
+
+There is not difference among the varies races with regards eating out.
+
+
 ## Summary and Conclusions
